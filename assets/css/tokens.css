@@ -1,0 +1,91 @@
+/*
+ * DOPS Design Kit — CLIENT SKIN LAYER
+ * -----------------------------------------------------------------------------
+ * This is the ONLY file that changes per client. components.css consumes these
+ * variables. Swap this file to reskin the entire kit for a new business.
+ *
+ * Client: Marv Thorn Insurance (Houston, TX) — independent agent
+ * Feel:   Warm · local · editorial · human · grounded (NOT corporate blue)
+ * Voice:  Your neighbor who knows insurance — not a call-center.
+ */
+
+:root {
+  /* ---------- Brand color palette ---------- */
+  /* Deep forest green: grounded, Southern, trustworthy — not the corporate
+     Progressive/Geico blue every big carrier uses. */
+  --brand-primary:        #1F3A2E;
+  --brand-primary-hover:  #163024;
+  --brand-primary-tint:   #2E5142;
+
+  /* Terracotta: Houston brick, warm human accent, single-CTA color. */
+  --brand-accent:         #C55F3F;
+  --brand-accent-hover:   #A94B2E;
+
+  /* Warm cream — never stark white. Approachable, editorial. */
+  --brand-cream:          #F7F1E5;
+  --brand-cream-soft:     #FBF7EE;
+
+  /* Ink + neutrals */
+  --ink:                  #1A1A1A;
+  --ink-soft:             #2C2A26;
+  --muted:                #6B6558;
+  --muted-strong:         #4A4740;
+  --hairline:             #E4DCC9;
+
+  /* Semantic */
+  --bg:                   var(--brand-cream);
+  --bg-alt:               #FFFFFF;
+  --surface:              #FFFFFF;
+  --text:                 var(--ink);
+  --text-muted:           var(--muted);
+  --link:                 var(--brand-primary);
+  --link-hover:           var(--brand-accent);
+
+  /* ---------- Typography ---------- */
+  /* Fraunces = variable humanist serif, editorial warmth (distinct from the
+     endless Inter/Poppins sans-only insurance sites).                          */
+  --font-heading: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Type scale — mobile-first, scales up via clamp() */
+  --step--1: clamp(0.83rem, 0.80rem + 0.15vw, 0.89rem);
+  --step-0:  clamp(1.00rem, 0.97rem + 0.15vw, 1.06rem);
+  --step-1:  clamp(1.19rem, 1.13rem + 0.30vw, 1.33rem);
+  --step-2:  clamp(1.41rem, 1.30rem + 0.55vw, 1.67rem);
+  --step-3:  clamp(1.65rem, 1.48rem + 0.85vw, 2.09rem);
+  --step-4:  clamp(1.95rem, 1.68rem + 1.35vw, 2.62rem);
+  --step-5:  clamp(2.30rem, 1.85rem + 2.25vw, 3.28rem);
+  --step-6:  clamp(2.72rem, 2.00rem + 3.60vw, 4.10rem);  /* hero H1 desktop hits ~66px */
+  --step-7:  clamp(3.20rem, 2.05rem + 5.75vw, 5.12rem);  /* xl hero — over 72px */
+
+  --leading-tight: 1.08;
+  --leading-snug:  1.22;
+  --leading-body:  1.65;
+
+  /* ---------- Space & radii ---------- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm: 0 1px 2px rgba(26,26,26,0.06), 0 1px 3px rgba(26,26,26,0.04);
+  --shadow-md: 0 4px 12px rgba(26,26,26,0.08), 0 2px 4px rgba(26,26,26,0.04);
+  --shadow-lg: 0 12px 32px rgba(26,26,26,0.10), 0 4px 8px rgba(26,26,26,0.04);
+
+  /* ---------- Motion ---------- */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 160ms;
+  --dur:      240ms;
+}

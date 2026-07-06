@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://l3escott.github.io/marv-thorn-preview/sitemap.xml

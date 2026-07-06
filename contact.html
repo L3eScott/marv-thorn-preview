@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <form class="lead reveal" action="https://formspree.io/f/PLACEHOLDER" method="POST" aria-labelledby="quote-heading">
+      <form class="lead reveal" method="POST" aria-labelledby="quote-heading">
         <h2 id="quote-heading" style="font-size:var(--step-3);margin:0 0 var(--sp-2);">Request a free quote</h2>
         <p class="form-note" style="margin:0 0 var(--sp-3);">Fill in what you have. Marv follows up within one business day.</p>
         <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
@@ -91,7 +91,7 @@
         </div>
         <div class="field"><label for="msg">Anything Marv should know</label><textarea id="msg" name="message" placeholder="What you cover today, any recent changes, and what you're hoping the new quote will do."></textarea></div>
         <button class="btn btn-primary" type="submit" style="margin-top:var(--sp-2);">Send to Marv</button>
-        <p class="form-note">By submitting, you consent to Marv contacting you about a quote. Form endpoint is a placeholder in this preview — it will connect to Marv's real inbox at launch.</p>
+        <p class="form-note">By submitting, you consent to Marv contacting you about a quote. Until the CRM endpoint is configured (Supabase project connection), submissions are held in preview mode with a visible notice.</p>
       </form>
     </div>
   </div>
@@ -111,6 +111,8 @@
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script src="assets/js/config.js"></script>
 <script defer src="assets/js/site.js"></script>
+<script defer src="assets/js/lead-form.js"></script>
 </body>
 </html>
